@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="产品操作"  description="">
+      <siteMapNode url="productmore.aspx" title="show all"  description="" />
+      <siteMapNode url="productAdd.aspx" title="增添产品"  description="" />
+      
+      <!--<siteMapNode url="" title="删除产品"  description="" />
+      <siteMapNode url="" title="修改产品"  description="" />-->
+      <siteMapNode url="productFind.aspx" title="查找产品"  description="" />
+      <siteMapNode url="ProductOrder/List.aspx" title="产品订单"  description="" />
+      <siteMapNode url="Category/List.aspx" title="产品分类"  description="" />
+      <siteMapNode url="Category/Add.aspx" title="添加分类"  description="" />
+
+    </siteMapNode>
+
+</siteMap>

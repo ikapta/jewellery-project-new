@@ -1,0 +1,14 @@
+E:\AspNet\2015网站\Jdesign\DAL\bin\Debug\DAL.dll
+E:\AspNet\2015网站\Jdesign\DAL\bin\Debug\DAL.pdb
+E:\AspNet\2015网站\Jdesign\DAL\bin\Debug\Model.dll
+E:\AspNet\2015网站\Jdesign\DAL\bin\Debug\Model.pdb
+E:\AspNet\2015网站\Jdesign\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\AspNet\2015网站\Jdesign\DAL\obj\Debug\DAL.dll
+E:\AspNet\2015网站\Jdesign\DAL\obj\Debug\DAL.pdb
+E:\Jdesign\Jdesign\DAL\bin\Debug\DAL.dll
+E:\Jdesign\Jdesign\DAL\bin\Debug\DAL.pdb
+E:\Jdesign\Jdesign\DAL\bin\Debug\Model.dll
+E:\Jdesign\Jdesign\DAL\bin\Debug\Model.pdb
+E:\Jdesign\Jdesign\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Jdesign\Jdesign\DAL\obj\Debug\DAL.dll
+E:\Jdesign\Jdesign\DAL\obj\Debug\DAL.pdb

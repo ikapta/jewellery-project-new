@@ -1,0 +1,10 @@
+E:\AspNet\2015网站\Jdesign\Model\bin\Debug\Model.dll
+E:\AspNet\2015网站\Jdesign\Model\bin\Debug\Model.pdb
+E:\AspNet\2015网站\Jdesign\Model\obj\Debug\Model.dll
+E:\AspNet\2015网站\Jdesign\Model\obj\Debug\Model.pdb
+E:\AspNet\2015网站\Jdesign\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\Jdesign\Jdesign\Model\bin\Debug\Model.dll
+E:\Jdesign\Jdesign\Model\bin\Debug\Model.pdb
+E:\Jdesign\Jdesign\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\Jdesign\Jdesign\Model\obj\Debug\Model.dll
+E:\Jdesign\Jdesign\Model\obj\Debug\Model.pdb

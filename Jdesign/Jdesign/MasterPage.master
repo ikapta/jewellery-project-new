@@ -1,0 +1,158 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/css.css" />
+    <script type="text/javascript" src="js/jquery.js.js"></script>
+    <script type="text/javascript" src="js/tabmenu.js"></script>
+    <script type="text/javascript" src="js/surround.js"></script>
+    <script type="text/javascript" src="js/airplane.js"></script>
+    <asp:ContentPlaceHolder ID="HeadContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+    <script>
+        //$(function () {
+        //    $("#exit").hide();
+        //    $("#login_form").hover(function () {
+        //        $("#exit").show();
+        //        $("#exit").hover(function () {
+        //            $(this).show();
+        //        }, function () {
+        //            $(this).hide();
+        //        })
+        //    }, function () {
+        //        $("#exit").hide();
+        //    });
+        //});
+        function ExitSystem() {
+            document.getElementById('<%= exitBtn.ClientID %>').click();
+        }
+        function getSeachText() {
+            var searchValue = $("#hein1").val();
+            if (searchValue == null || searchValue == "") {
+                alert("请输入要搜索产品的名称！");
+                return;
+            }
+            else {
+                window.location.href = "search.aspx?searchText=" + escape(searchValue);
+            }
+
+        }
+
+    </script>
+
+</head>
+<body>
+    <form runat="server">
+        <div id="wrap">
+            <div>
+                <!-- header部分   -->
+                <div id="onehead" runat="server">
+                    <span id="exit" runat="server"><a onclick="ExitSystem()">退出</a></span>
+
+                    <div id="rejist">
+
+                        <%--<span class="denglu"></span>--%>
+                        <div id="youke" runat="server">
+                            <a class="rega1" href="login.aspx">登录</a>
+                            <span class="splite">|</span>
+                            <a href="regist.aspx">注册</a>
+                        </div>
+
+                        <div id="login" runat="server" style="float:left">
+                            <%=Session["name"]==null?"":Session["name"] %>,您好，欢迎购物！
+                        </div>
+
+                        <%--	<span class="jilu"></span>
+					<a class="jilufont"> 记录</a>--%>
+                        <div id="productManage" runat="server"><a href="productmore.aspx">产品维护</a></div>
+
+                    </div>
+                </div>
+                <div class="head">
+                <a href="content.aspx">    <img src="img/mainlogo.gif" onselectstart="return false" ondragstart="return false" runat="server"></a>
+
+                    <input type="text" placeholder="search..." autofocus x-webkit-speech id="hein1" />
+                    <input type="button" id="hein2" value="submit" onclick="getSeachText()" />
+                    <span id="headcar">购物车<a href="../ShoppingCart.aspx">[<%=Session["count"]==null?0:Session["count"] %>]</a></span>
+                </div>
+            </div>
+
+
+            <div class="MMCont">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div id="footer">
+                <!-- footer部分 -->
+                <div class="navlist2">
+                    <dl class="nav_list_1">
+                        <dt>微信关注更有好礼送</dt>
+                        <dd>
+                            <img src="img/12.jpg" runat="server" /></dd>
+                    </dl>
+                    <dl class="nav_list_more">
+                        <dt>产品家族联盟</dt>
+                        <dd>周大生</dd>
+                        <dd>周大福</dd>
+                        <dd>老凤祥</dd>
+                        <dd>千禧之星</dd>
+                    </dl>
+                    <dl class="nav_list_more">
+                        <dt>支持与帮助</dt>
+                        <dd>免费保养</dd>
+                        <dd>免费维修</dd>
+                        <br />
+                        <dd>反馈邮箱：<br />
+                            fankui@chaoshuang.com</dd>
+                    </dl>
+                    <dl class="nav_list_more">
+                        <dt>关于我们</dt>
+                        <dd>招聘信息</dd>
+                        <dd>联系我们</dd>
+                    </dl>
+                    <dl class="nav_list_1 nav_list-right">
+                        <dt>关注微博</dt>
+                        <dd><a href="http://weibo.com/338944949">新浪微博</a></dd>
+                        <dd>腾讯微博</dd>
+                    </dl>
+                </div>
+                <div class="foot_navlist1">
+                    <a>超爽商城</a> |
+				<a>广告服务</a> |
+				<a>超爽公益</a> |
+				<a>移动平台</a> |
+				<a>用户守则</a> |
+				<a>隐私条款</a>
+
+                </div>
+                <p class="foot_p">Copyright©2014 超爽 chaoshuang.com 版权所有</p>
+            </div>
+
+        </div>
+        <div id="airm">
+            <img src="img/air.png" class="airmain" alt="返回顶部" style="width: 44px; height: 44px; position: fixed !important; bottom: 30%; right: 1.2%; display: none; cursor: pointer"/>
+            <span class="weixin" style="bottom: 25%; right: 4.7%; position: fixed !important; visibaly: hidden; background-color: rgba(0,0,0,.7); color: #F0F0F4; width: 80px; padding: 4px 6px 7px 6px"><span style="display: block; border-bottom: 1px solid #D6D6D6;">Touch me</span><span style="font-size: 12px; display: block; padding: 3px 0 2px 0;">返回顶部</span></span>
+        </div>
+    
+        <%--<button id="feiji"  style="background-color: red; position: fixed !important; bottom: 30%; right: 45%; display: none; cursor: pointer">back to tops</button>--%>
+        <script type="text/javascript">
+            $(function () {
+                $(".weixin").hide();
+                $("#airm").hover(function() {
+                    $(".weixin", this).stop().slideToggle(0);
+
+                });
+            })
+        </script>
+
+        <asp:Button Style="display: none" ID="exitBtn" runat="server" Text="Button" OnClick="exitBtn_Click" />
+    </form>
+     
+
+</body>
+</html>
